@@ -5,12 +5,6 @@
                          :background-color="$ml.get('teamView.title.bg')"
                          :text-color="$ml.get('teamView.title.color')"/>
         <teamscards-component class="page-paddings" :teams="teams"/>
-
-        <title-component v-if="mentors.length > 0" class="mt-5" :title="$ml.get('teamView.title.mentor')"
-                         :background-color="$ml.get('teamView.title.bg')"
-                         :text-color="$ml.get('teamView.title.color')"/>
-        <mentors-cards-component v-if="mentors.length > 0" class="page-paddings" :mentors="mentors"/>
-
     </b-row>
 </template>
 
@@ -18,18 +12,15 @@
     import ImageGreetingComponent from '../components/ImageGreetingComponent';
     import TitleComponent from '../components/TitleComponent';
     import TeamscardsComponent from "../components/TeamscardsComponent";
-    import MentorsCardsComponent from "../components/MentorsCardsComponent";
     export default {
         components: {
             TeamscardsComponent,
             ImageGreetingComponent,
-            TitleComponent,
-            MentorsCardsComponent
+            TitleComponent
         },
         data() {
             return {
                 teams: [],
-                mentors: [],
                 isMobile: false
             }
         },
@@ -37,14 +28,9 @@
             if (window.innerWidth <= 992 ) {
                 this.isMobile = true;
             }
-            this.$axios.get('/teams')
+            this.$axios.get('v1/team')
                 .then((response) => {
-                    this.teams = response.data.teams;
-                    this.mentors = response.data.mentors;
-                })
-                .catch(error => {
-                    // eslint-disable-next-line no-console
-                    console.log(error.response.data.message);
+                    this.teams = response.data.team;
                 })
         }
     }
