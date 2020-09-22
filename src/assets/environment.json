@@ -1,0 +1,6 @@
+{
+  "env": {
+    "host" : "https://admin.nitg.site",
+    "port" : "8000"
+  }
+}

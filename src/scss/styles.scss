@@ -1,0 +1,301 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+@import '~hamburgers/_sass/hamburgers/hamburgers';
+@import '~vue-loading-overlay/dist/vue-loading.css';
+@import '~tui-editor/dist/tui-editor.css';
+@import '~tui-editor/dist/tui-editor-contents.css';
+@import '~codemirror/lib/codemirror.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&display=swap');
+@import './mixins';
+@import '~bootstrap/scss/variables';
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px
+) !default;
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(88, 125, 69,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a9a9a9;
+  outline: 1px solid slategrey;
+}
+.me_partners-main { .me_cooperating-component-partner-image {
+  width: 60%!important;
+}}
+
+button:focus {
+  outline: none!important;
+  box-shadow: none!important;
+}
+
+a {
+  &:hover {
+    text-decoration: none!important;
+  }
+}
+
+.close {
+  display: none!important;
+}
+
+.me_stromnetze-slide {
+  @include backgroundImage("../assets/images/me_stromnetze-slide.jpg", 100% 50% cover);
+  background-size: 50% 100%;
+}
+.me_industrieanlagen-slide {
+  @include backgroundImage("../assets/images/slide_industrieanlagen.jpg", 100% 50% cover);
+  background-size: 50% 100%;
+}
+.me_erneuerbare-energien-slide {
+  @include backgroundImage("../assets/images/slide_erneuerbare.jpg",  100% 50% cover);
+  background-size: 50% 100%;
+}
+.me_consulting-slide {
+  @include backgroundImage("../assets/images/slide-consulting.jpg", 100% 50% cover);
+  background-size: 50% 100%;
+
+}
+
+
+.me_video-component-title, .me_top-block-with-image-component-title, .me_title-component-title {
+  font-size: 18pt!important;
+  font-weight: bold!important;
+  line-height: 28pt!important;
+}
+
+.me_greeting-component-caption-title {
+  font-weight: 800!important;
+}
+
+.me_beratung-img {
+  width: 20% !important;
+  padding-top: 10%;
+}
+.me-team-img-modal {
+  width: 100% !important;
+}
+.me_video-component-description {
+  color: #0A2737;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.me_video-component-description-main {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+#carousel {
+  margin-bottom: 60px;
+}
+
+
+@media screen and (max-width: 576px){
+  .me_carousel-indicators{
+    bottom: -10% !important;
+  }
+  #carousel {
+    margin-bottom: 0!important;
+  }
+  .row {
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+  }
+ .page-paddings {
+   padding-left: 0px!important;
+   padding-right: 0px!important;
+ }
+  .container {
+    max-width: 100% !important;
+    padding: 0;
+    text-align: justify;
+  }
+  .logo {
+    padding-left: 7%;
+  }
+  .me_detailed-component-block {
+    padding: 0;
+  }
+  .me_icon_consult {
+    padding-left: 10%;
+  }
+  .me-imageincomp {
+    max-width: 90%;
+  }
+  .me_carousel-caption-description {
+    text-align: left!important;
+    font-size: 70%;
+  }
+  .me_video-component-description {
+    text-align: left!important;
+  }
+  .me_beratung-img {
+    width: 100% !important;
+    padding-top: 5%;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1199px) {
+  .container {
+    max-width: 100% !important;
+    padding: 0;
+    text-align: justify;
+  }
+  .logo {
+    padding-left: 7%;
+  }
+  .me_carousel-inner {
+    height: 50%!important;
+  }
+  #carousel {
+    margin-bottom: 0!important;
+  }
+  .carousel-indicators {
+    height: 40px!important;
+  }
+  .me_carousel-indicators{
+    bottom: -7% !important;
+  }
+  .me_carousel-indicators li > span  {
+    font-size: 1rem!important;
+  }
+  .me-reason-container {
+    .col-xl-4 {
+      margin-left: 20%;
+      max-width: 80%;
+    }
+  }
+  .me_video-component-line-right {
+    padding-top: 5% !important;
+  }
+  .me_greeting-image {
+    width: 100% !important;
+  }
+  .me-consulting-pad-container {
+    padding-left: 0!important;
+  }
+  .img-fluid {
+
+    width: 100%;
+  }
+  .me_kontakt-map-image {
+    background-image: none !important;
+  }
+  .me_beratung-img {
+    margin: auto!important;
+  }
+  .me_icon_consult {
+    margin-left: 25%;
+  }
+
+}
+
+@media screen and (min-width: 998px) and (max-width: 1199px) {
+  .me_carousel-inner {
+    //height: 700px!important;
+  }
+}
+
+
+@media screen and (max-width: 1199px){
+  .me_stromnetze-slide {
+    @include backgroundImage("../assets/images/me_stromnetze-slide.jpg", 100% 50% cover);
+    background-size: 100% 100%;
+  }
+  .me_industrieanlagen-slide {
+    @include backgroundImage("../assets/images/slide_industrieanlagen.jpg", 100% 50% cover);
+    background-size: 100% 100%;
+  }
+  .me_erneuerbare-energien-slide {
+    @include backgroundImage("../assets/images/slide_erneuerbare.jpg",  100% 50% cover);
+    background-size: 100% 100%;
+  }
+  .me_consulting-slide {
+    @include backgroundImage("../assets/images/slide-consulting.jpg", 100% 50% cover);
+    background-size: 100% 100%;
+
+  }
+
+  .page-paddings {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+  }
+  .page-paddings-left {
+    padding-left: 0px!important;
+  }
+  .page-paddings-right {
+    padding-right: 0!important;
+  }
+
+  .me_cooperating-component-partner-image {
+    width: 50%!important;
+  }
+
+  .container {
+    max-width: 100%!important;
+
+  }
+}
+
+
+@media screen and (min-width: 1200px){
+  .me_mome-container {
+  .me-imageincomp {
+    margin-left: 30%;
+  }}
+  .me_greeting-image {
+    //height: 540px!important;
+    width: 50%;
+  }
+  .me-team-greeting {
+    .me_greeting-image {
+      //height: 640px!important;
+    }
+  }
+  .me_consaltings-greeting{
+    //height: 540px!important;
+  }
+  iframe {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border: 0px;
+    height: 100%;
+    min-height: 500px;
+  }
+  .me_top-block-with-image-image {
+    width: 100%!important;
+  }
+  }
+
+@media screen and (min-width: 1600px){
+  .big-screen-top-pad {
+    padding-top: 3% !important;
+  }
+
+}
+
+@media screen and (min-width: 1920px){
+
+
+}
+
+
+
