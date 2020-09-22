@@ -65,7 +65,7 @@
                             <b-col cols="12" xl="6">
                                 <b-form-group id="messageGroup" class="my-auto p-0 shadow">
                                     <b-textarea id="message"
-                                                v-model="form.message"
+                                                v-model="form.feedback"
                                                 rows="6"
                                                 required
                                                 :placeholder="$ml.get('feedback').message"></b-textarea>
@@ -101,25 +101,20 @@
                     email: null,
                     name: null,
                     phone: null,
-                    message: null
+                    feedback: null
                 }
             }
         },
         methods: {
           sendFeedback() {
-              const fd = new FormData();
-              fd.append('name', this.form.name);
-              fd.append('email', this.form.email);
-              fd.append('phone', this.form.phone);
-              fd.append('feedback', this.form.message);
               this.$bvToast.show('warning');
-              this.$axios.post('/v1/send-feedback', fd)
+              this.$axios.post('/v1/feedback', this.form)
                   .then(() => {
                       this.form = {
                           email: null,
                           name: null,
                           phone: null,
-                          message: null
+                          feedback: null
                       };
                       this.$bvToast.hide('warning');
                       this.$bvToast.show('success')
