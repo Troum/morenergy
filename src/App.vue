@@ -8,7 +8,18 @@
             <footer-component/>
         </b-container>
         <b-modal id="story-modal" centered hide-footer size="xl" :title="title">{{content}}</b-modal>
-
+        <b-modal id="banner-modal" centered hide-header size="xl" content-class="rounded-0"
+                 ok-only>
+          <b-row class="m-0 p-0">
+            <b-col cols="12" class="m-0 p-0 text-center">
+              <img src="@/assets/banner.jpg" alt="Conference Banner" class="img-fluid">
+            </b-col>
+          </b-row>
+          <template v-slot:modal-footer>
+            <b-button class="rounded-0 float-right" variant="success" @click="register">Register</b-button>
+            <b-button class="rounded-0 float-right" variant="primary" @click="$bvModal.hide('banner-modal')">Skip</b-button>
+          </template>
+        </b-modal>
         <div>
             <b-modal id="my-modal" centered hide-footer :no-close-on-backdrop="true" title="Cookie policy">
                 <div class="d-block text-center">
@@ -40,7 +51,6 @@
                     'event_category': 'Menu click Startseite',
                     'event_label': 'Startseite'
                 });
-                console.log("menu click")
             });
 
             document.getElementById("Dienstleistungen").addEventListener("click", function() {
@@ -48,7 +58,6 @@
                     'event_category': 'Menu click Dienstleistungen',
                     'event_label': 'Dienstleistungen'
                 });
-                console.log("menu click")
             });
 
             document.getElementById("Produkte").addEventListener("click", function() {
@@ -56,7 +65,6 @@
                     'event_category': 'Menu click Produkte',
                     'event_label': 'Produkte'
                 });
-                console.log("menu click")
             });
 
             document.getElementById("Referenzen").addEventListener("click", function() {
@@ -64,7 +72,6 @@
                     'event_category': 'Menu click Referenzen',
                     'event_label': 'Referenzen'
                 });
-                console.log("menu click")
             });
 
             document.getElementById("Team morEnergy").addEventListener("click", function() {
@@ -72,7 +79,6 @@
                     'event_category': 'Menu click Team morEnergy',
                     'event_label': 'Team morEnergy'
                 });
-                console.log("menu click")
             });
 
             document.getElementById("Aktuelles").addEventListener("click", function() {
@@ -80,7 +86,6 @@
                     'event_category': 'Menu click Aktuelles',
                     'event_label': 'Aktuelles'
                 });
-                console.log("menu click")
             });
 
             document.getElementById("Videos").addEventListener("click", function() {
@@ -88,7 +93,6 @@
                     'event_category': 'Menu click Videos',
                     'event_label': 'Videos'
                 });
-                console.log("menu click")
             });
 
             document.getElementById("Kontakt").addEventListener("click", function() {
@@ -96,7 +100,6 @@
                     'event_category': 'Menu click Kontakt',
                     'event_label': 'Kontakt'
                 });
-                console.log("menu click Kontakt")
             });
 
 
@@ -120,6 +123,9 @@
             acceptCookies() {
                 this.$cookies.set('_accepted', true);
                 this.$bvModal.hide('my-modal')
+            },
+            register() {
+              window.open('https://www.netzimpedanz.com/event-details/treffen-interessenverband-netzimpedanz/form', '_blank')
             }
     }}
 </script>

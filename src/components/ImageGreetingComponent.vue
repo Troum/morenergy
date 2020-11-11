@@ -2,8 +2,8 @@
     <b-row class="w-100 mx-auto p-0">
         <b-col cols="12" id="image-greeting" class="me_greeting-component-container">
             <b-row class="m-0 p-0 d-flex position-relative">
-                <b-col cols="12" class="p-0 m-0 ">
-                    <img class="me_greeting-image img-fluid w-sm-100 w-md-100 w-xl-50 w-lg-100" :src="greeting.image" :alt="greeting.caption">
+                <b-col cols="12" class="p-0 m-0" :style="$route.name === 'aktuelle' ? 'background-color: #0a2738' : ''">
+                    <img :class="$route.name === 'aktuelle' ? '' : 'img-fluid'" class="me_greeting-image w-sm-100 w-md-100 w-xl-50 w-lg-50" :src="greeting.image" :alt="greeting.caption">
                 </b-col>
                 <b-col v-if="$route.name !== 'aktuelle'" offset-xl="6" cols="12" xl="6" class="me_greeting-component-caption-container">
                     <b-row>

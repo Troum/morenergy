@@ -12,7 +12,7 @@
                         @click="showModal(item)"
                         :title="item.name"
                         :sub-title="$ml.current === 'DE' ? item.position : item.en_position"
-                        :img-src="item.image"
+                        :img-src="item.full_image"
                         :img-alt="item.name"
                         img-top
                         class="mb-2 rounded-0 h-100 bg-white border-0">
@@ -35,7 +35,7 @@
         data() {
             return {
                 pages: 0,
-                perPage: 8,
+                perPage: 32,
                 paginated: [],
                 currentPage: 1,
                 slide: null

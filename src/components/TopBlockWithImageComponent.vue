@@ -4,7 +4,7 @@
 
             <b-col cols="11" align-h="center" class="mx-auto">
                 <p class="me_top-block-with-image-component-title">{{ $ml.current === 'DE' ? item.name : item.en_name }}</p>
-                <hr class="me_top-block-with-image-component-title-underline mb-3">
+                <hr v-if="item.name" class="me_top-block-with-image-component-title-underline mb-3">
             </b-col>
 
             <b-col cols="12" xl="6" class="m-0 d-flex align-items-center me_top-block-with-image-component-line-right">
@@ -18,7 +18,8 @@
                 <b-row>
 
                     <b-col cols="11" align-h="center" class="mx-auto pl-xl-5">
-                        <p class="me_top-block-with-image-component-description"><tui-editor-viewer :value="$ml.current === 'DE' ? item.description : item.en_description"/></p>
+                        <p class="me_top-block-with-image-component-description">
+                          <tui-editor-viewer :value="$ml.current === 'DE' ? item.description : item.en_description"/></p>
                     </b-col>
                     <b-col cols="11" align-h="center" class="mx-auto pl-xl-5">
                         <p class="me_top-block-with-image-component-info">{{ $ml.current === 'DE' ? item.info : item.en_info }}</p>

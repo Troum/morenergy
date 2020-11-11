@@ -73,6 +73,11 @@ const router = new Router({
             component: () => import('./views/VideosView')
         },
         {
+            path: '/presentations',
+            name: 'presentations',
+            component: () => import('./views/PresentationView')
+        },
+        {
             path: '/team-morenergy',
             name: 'team',
             component: () => import('./views/TeamView')

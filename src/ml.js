@@ -44,6 +44,10 @@ export default new MLCreate({
                     link: "/videos"
                 },
                 {
+                    title: "Presentations",
+                    link: "/presentations"
+                },
+                {
                     title: "Contact",
                     link: "/kontakt"
                 },
@@ -99,10 +103,10 @@ export default new MLCreate({
             },
             fontpageNews: {
                 0: {
-                    title: 'Power Quality Workshop 2020 Munich',
-                    videoUrl: require('./assets/videos/workshop_munich.mp4'),
+                    title: 'Interview with our CTO Dr.-Ing. Michael Jordan',
+                    videoUrl: require('./assets/videos/interview_mit_michael_und_ingenieurwerk.mp4'),
                     posterUrl: require('./assets/images/videologo.png'),
-                    description: 'morEnergy demonstrated at an exclusive event together with the Technical University Munich the functionality of the network impedance meter ONIS. The measuring device developed by morEnergy offers many advantages for industrial and distribution networks. Read more about it under the heading "News".',
+                    description: 'Our CTO talks about the opportunities and peculiarities of the electrical engineering industry and his motivation to start a company.',
 
                 },
                 1: {
@@ -120,14 +124,13 @@ export default new MLCreate({
                         '# Health monitoring for a long-lasting network (AI)<br>' +
                         '# Smart Grid Analysis (AI vulnerability assessment) <br>' +
                         '# Power Quality Monitoring (AI)<br>' +
-                        '# Preventive Maintenance (AI-controlled)'  }
-            },
+                        '# Preventive Maintenance (AI-controlled)'  },
                 2: {
-                    title: 'Warum ONIS?',
-                    videoUrl: require('./assets/videos/workshop_munich.mp4'),
-                    posterUrl: require('./assets/images/onis-comp.png'),
-                    description: 'Moderne Hochleistungswechselrichtersysteme finden Sie in Schnellladesystemen für E-Autos, in Hochhausaufzügen, auf Serverfarmen und in Photovoltaik- und Windkraftanlagen. Sie funktionieren normalerweise auch unter schwierigsten Bedingungen zuverlässig Diese hocheffiziente Frequenzumrichtertechnik steuert nicht nur präzise die Ladegeschwindigkeit oder auch die Geschwindigkeit von Aufzügen, sondern sorgt auch Energieregelung am Stromnetz. Die Zuverlässigkeit der Systeme setzt voraus, dass die Wechselwirkungen zwischen Frequenzumrichter und dem Stromnetz bei der Reglerauslegung durch die Ingenieure gut abgeschätzt wurden. Ist das nicht der Fall, aufgrund von komplexen Stromnetzen vor Ort, kommt es im Betrieb nicht selten zu Instabilitäten, die Systemausfällen zur Folge haben. Mit unserer ONIS-Technologie verhindern wir Probleme der Systemintegration von Energieerzeugern und -verbrauchern und verhindern System- und Einnahmeausfälle proaktiv'
-                },
+                    title: 'ONIS Technology - From Hamburg for the world',
+                    posterUrl: require('./assets/images/onis_front.png'),
+                    description: 'morEnergy originated from the network impedance research. As a Hamburg based company we want to offer our technology to the world market to support decentralized power generation. With our patented Online Network Impedance Spectrometer ONIS high-frequency power quality measurements can be performed. Our speciality is network impedance measurement for the detection of dangerous resonances up to 50 kHz in the power grid. With this solution we stand out from the competition and can detect problems before they occur. We offer on-site measurements to identify weak points and, as experts, we can show you proposed solutions'
+                }
+            },
             reason: {
                 title: {
                     title: 'ONIS Technology - Application examples\n',
@@ -437,6 +440,11 @@ export default new MLCreate({
                     title: 'Videos',
                     caption: 'morEnergy in moving pictures\n'
                 },
+                presentations: {
+                    image: require('./assets/images/videos-min.jpg'),
+                    title: 'Presentations',
+                    caption: 'morEnergy in presentations\n'
+                },
                 title: {
                     title: 'Job advertisements',
                     bg: '#0A2737',
@@ -507,6 +515,11 @@ export default new MLCreate({
                     link: "/videos"
                 },
                 {
+                    title: "Präsentationen",
+                    id: "Presentations",
+                    link: "/presentations"
+                },
+                {
                     title: "Kontakt",
                     id: "Kontakt",
                     link: "/kontakt"
@@ -564,10 +577,10 @@ export default new MLCreate({
             },
             fontpageNews: {
                 0: {
-                    title: 'Power Quality Workshop 2020 München',
-                    videoUrl: require('./assets/videos/workshop_munich.mp4'),
+                    title: 'Interview mit unserem CTO Dr.-Ing. Michael Jordan',
+                    videoUrl: require('./assets/videos/interview_mit_michael_und_ingenieurwerk.mp4'),
                     posterUrl: require('./assets/images/videologo.png'),
-                    description: 'morEnergy zeigte bei einem exklusiven Event zusammen mit der Technischen Universität München die Funktionsweise des Netzimpedanz Messgeräts ONIS. Das von morEnergy entwickelte Messgerät hält viele Vorteile für Industrie- und Verteilernetze bereit. Lesen Sie mehr darüber unter der Rubrik „Aktuelles“.',
+                    description: 'Unser CTO spricht über Chancen und Besonderheiten der Elektroingenieurs Branche und über seine Motivation eine Firma zu gründen.',
 
 
                 },
@@ -587,6 +600,11 @@ export default new MLCreate({
                         '# Smart-Grid-Analysis (KI-Schwachstellenermittlung) <br>' +
                         '# Power-Quality-Monitoring (KI)<br>' +
                         '# Preventive Maintenance (KI-gesteuert)'  },
+                2: {
+                    title: 'ONIS Technologie - Aus Hamburg für die Welt',
+                    posterUrl: require('./assets/images/onis_front.png'),
+                    description: 'morEnergy ist aus der Netzimpedanzforschung hervorgegangen. Als Hamburger Unternehmen wollen wir unsere Technologie dem Weltmarkt anbieten, um die dezentrale Stromerzeugung zu unterstützen. Mit unserem patentierten Online Network Impedance Spectrometer ONIS  können hochfrequente Power Quality Messungen durch geführt werden. Dabei ist unsere Spezialität die Netzimpedanzmessung zur Detektion von gefährlichen Resonanzen bis 50 kHz im Stromnetz. Wir heben uns mit dieser Lösung von der Konkurrenz ab und können Probleme feststellen, bevor sie entstehen.  Wir bieten die Messungen vor Ort an, um Schwachpunkte zu identifizieren und zeigen Ihnen als Sachverständige Lösungsvorschläge auf.'
+                }
 
             },
             reason: {
@@ -837,7 +855,7 @@ export default new MLCreate({
                     '<br>- Elektrische Energiespeicherauslegung für Kreuzfahrschiffe\n' +
                     '<br>- Konzeptionierung von elektrischen Netzprüfungen und Betriebsmitteln im 16,7 Hz-Bahnnetzen\n' +
                     '<br>- Störungsbeseitigung an wechselrichterbetriebenen Anlagen',
-                text2: 'Wir von morEnergy kommen aus der elektrischen Energienetze Forschung. Das vollumfängliche Wissen über diese elektrischen Systeme ist unsere Stärke. Wir verstehen uns jedoch nicht als akademische  sind  verfolgen jedoch für unsere Kundenlösungen nach dem Hands-On-Prinzip.  '
+                text2: 'Wir von morEnergy kommen aus der elektrischen Energienetze Forschung. Das vollumfängliche Wissen über diese elektrischen Systeme ist unsere Stärke. Wir verstehen uns jedoch nicht als akademische Theoretiker sondern arbeiten nach dem Hands-On-Prinzip.  '
             },
             beratung2: {
                 titlepage: 'Studien zur Netzintegration',
@@ -905,6 +923,11 @@ export default new MLCreate({
                     image: require('./assets/images/videos-min.jpg'),
                     title: 'Videos',
                     caption: 'morEnergy in bewegten Bildern'
+                },
+                presentations: {
+                    image: require('./assets/images/videos-min.jpg'),
+                    title: 'Präsentationen',
+                    caption: 'morEnergy Präsentationen'
                 },
                 title: {
                     title: 'Stellenausschreibungen',

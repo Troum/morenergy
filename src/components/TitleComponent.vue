@@ -1,7 +1,10 @@
 <template>
     <b-row class="m-0 w-100 page-paddings">
-        <b-col :cols="$route.name === 'consulting' || $route.name === 'produkt' || $route.name === 'impressum' ? 12 : 10" :xl="$route.name === 'consulting' || $route.name === 'produkt' ? 12 : 6" class="d-flex justify-content-center align-items-center mx-auto p-2" :style="{'background-color': backgroundColor}">
+        <b-col :cols="$route.name === 'consulting' || $route.name === 'produkt' || $route.name === 'impressum' ? 12 : 10" :xl="$route.name === 'consulting' || $route.name === 'produkt' ? 12 : 7" class="d-flex justify-content-center align-items-center mx-auto p-2" :style="{'background-color': backgroundColor}">
             <p class="text-center me_title-component-title m-auto" :style="{'color' : textColor}">{{ title }}</p>
+        </b-col>
+        <b-col v-if="hr" cols="12" class="d-flex">
+          <hr class="me_video-component-title-underline mb-5 mx-auto">
         </b-col>
     </b-row>
 </template>
@@ -11,7 +14,8 @@
         props: {
             backgroundColor: null,
             textColor: null,
-            title: null
+            title: null,
+            hr: null
         }
     }
 </script>
