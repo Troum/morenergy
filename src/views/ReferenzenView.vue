@@ -46,6 +46,13 @@
     import TitleComponent from '../components/TitleComponent';
     import ProjectDescriptionComponent from "../components/ProjectDescriptionComponent";
     export default {
+      metaInfo: {
+        title: 'Netzimpedanz',
+        titleTemplate: null,
+        meta: [
+          { name: 'description', content: 'Unsere Referenzen im Bereich Netzimpedanz' }
+        ]
+      },
         components: {
             ProjectDescriptionComponent,
             TitleComponent

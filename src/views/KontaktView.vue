@@ -94,6 +94,10 @@
 
 <script>
     export default {
+      metaInfo: {
+        title: 'Kontakt_Morenergy',
+        titleTemplate: null
+      },
         data() {
             return {
                 mapHeight: 320,

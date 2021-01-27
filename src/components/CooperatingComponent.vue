@@ -7,9 +7,9 @@
             <b-row class="p-0 m-0">
                 <b-col :cols="partner.name ? 3 : 12" xl="12" class="p-0 m-0 text-center">
                     <a v-if="partner.link" :href="partner.link" target="_blank">
-                        <img :src="partner.image" :alt="partner.title" class="img-fluid me_cooperating-component-partner-image">
+                        <img :src="partner.image" :alt="partner.alt" class="img-fluid me_cooperating-component-partner-image">
                     </a>
-                    <img v-if="!partner.link" :src="partner.image" :alt="partner.title" class="img-fluid me_cooperating-component-partner-image">
+                    <img v-if="!partner.link" :src="partner.image" :alt="partner.alt" class="img-fluid me_cooperating-component-partner-image">
 
                 </b-col>
                 <b-col v-if="partner.name" cols="9" xl="12"

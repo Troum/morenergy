@@ -13,6 +13,13 @@
     import TitleComponent from '../components/TitleComponent';
     import TeamscardsComponent from "../components/TeamscardsComponent";
     export default {
+      metaInfo: {
+        title: 'Mannschaft_morEnergy',
+        titleTemplate: null,
+        meta: [
+          { name: 'description', content: 'Unser Team in Hamburg' }
+        ]
+      },
         components: {
             TeamscardsComponent,
             ImageGreetingComponent,

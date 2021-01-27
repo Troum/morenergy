@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import VueMeta from 'vue-meta'
 import {ButtonPlugin, CardPlugin,
   CollapsePlugin,
   FormPlugin, FormGroupPlugin,
@@ -44,7 +45,7 @@ Vue.use(VueTruncate);
 Vue.use(Editor, defaultOptions);
 Vue.use(ProgressPlugin);
 Vue.use(Viewer);
-
+Vue.use(VueMeta);
 Vue.config.productionTip = false;
 
 Vue.filter('truncateHtml', (value, size) => {

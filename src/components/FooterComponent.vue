@@ -60,6 +60,11 @@
                         icon: require('../assets/images/facebook.png'),
                         link: 'https://www.facebook.com/morenergy.hamburg/',
                         alt: 'morEnergy Facebook'
+                    },
+                    {
+                        icon: require('../assets/images/youtube.png'),
+                        link: 'https://www.youtube.com/channel/UC9iz9AXsOSdEXr0X3IKCjRg',
+                        alt: 'morEnergy YouTube'
                     }
                 ],
             }

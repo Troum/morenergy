@@ -12,7 +12,7 @@
                     <b-row class="mx-auto p-0">
                         <b-col cols="12" xl="10" class="mx-auto text-center">
                          <a href="/produkte/onis">
-                            <img src="../assets/images/onis.png" alt="" class="me_top-block-with-image-image">
+                            <img src="../assets/images/onis.png" alt="Netzimpednazmessgerät" class="me_top-block-with-image-image">
                          </a>
                         </b-col>
                     </b-row>
@@ -44,7 +44,7 @@
                     <b-row class="p-0 mx-auto">
                         <b-col cols="12" xl="10" class="mx-auto text-center">
                             <a href="/produkte/mome">
-                            <img src="../assets/images/MoMeshad.png" alt="" class="me_top-block-with-image-image">
+                            <img src="../assets/images/MoMeshad.png" alt="Netzüberwachung" class="me_top-block-with-image-image">
                             </a>
                         </b-col>
                     </b-row>
@@ -69,6 +69,13 @@
     import ImageGreetingComponent from '../components/ImageGreetingComponent';
     import TopBlockWithImageComponent from '../components/TopBlockWithImageComponent';
     export default {
+      metaInfo: {
+        title: 'Netzimpedanzmessung',
+        titleTemplate: null,
+        meta: [
+          { name: 'description', content: 'Netzimpedanz ist unser Spezialgebiet' }
+        ]
+      },
         components: {
             ImageGreetingComponent,
             TopBlockWithImageComponent

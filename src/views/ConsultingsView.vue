@@ -12,7 +12,7 @@
         <b-col cols="12" xl="6" class="mt-4 mb-4 mt-xl-5 mb-xl-5 me_detailed-component-block page-paddings-left">
             <b-row class="h-100">
                 <b-col cols="4" xl="3" class="d-flex h-100">
-                    <img class="me_icon_consult" src="../assets/images/beraman.png" >
+                    <img class="me_icon_consult" alt="Netzimpedanz Speziallösungen" src="../assets/images/beraman.png" >
                 </b-col>
                 <b-col cols="8" xl="9" class="h-100 me-consulting-pad-container">
                     <b-row class="h-100">
@@ -32,7 +32,7 @@
         <b-col cols="12" xl="6" class="mt-4 mb-4 mt-xl-5 mb-xl-5 me_detailed-component-block page-paddings-right">
             <b-row class="h-100">
                 <b-col cols="4" xl="3" class="d-flex h-100">
-                    <img class="me_icon_consult" src="../assets/images/beracnt.png" >
+                    <img class="me_icon_consult" alt="Netzintegrationsstudien" src="../assets/images/beracnt.png" >
                 </b-col>
                 <b-col cols="8" xl="9" class="h-100 me-consulting-pad-container">
                     <b-row class="h-100">
@@ -51,7 +51,7 @@
         <b-col cols="12" xl="6" class="mt-4 mb-4 mt-xl-5 mb-xl-5 me_detailed-component-block page-paddings-left">
             <b-row class="h-100">
                 <b-col cols="4" xl="3" class="d-flex h-100">
-                    <img class="me_icon_consult me-simulation-icon" src="../assets/images/berasim.png" >
+                    <img class="me_icon_consult me-simulation-icon" alt="Simulation " src="../assets/images/berasim.png" >
                 </b-col>
                 <b-col cols="8" xl="9" class="h-100 me-consulting-pad-container">
                     <b-row class="h-100">
@@ -70,7 +70,7 @@
         <b-col cols="12" xl="6" class="mt-4 mb-4 mt-xl-5 mb-xl-5 me_detailed-component-block page-paddings-right">
             <b-row class="h-100">
                 <b-col cols="4" xl="3" class="d-flex h-100">
-                    <img class="me_icon_consult" src="../assets/images/beraoil.png" >
+                    <img class="me_icon_consult" alt="Power Quality von Stromnetzen" src="../assets/images/beraoil.png" >
                 </b-col>
                 <b-col cols="8" xl="9" class="h-100 me-consulting-pad-container">
                     <b-row class="h-100">
@@ -99,7 +99,7 @@
                 <b-col cols="12" xl="6" class="m-0 me_video-component-line-right">
                     <b-row>
                         <b-col cols="12" class="d-flex align-items-left me-messungen-image">
-                            <img src="../assets/images/Messungen-min.jpg" alt="" class="w-100 h-100">
+                            <img src="../assets/images/Messungen-min.jpg" alt="Power Quality Messung" class="w-100 h-100">
                         </b-col>
                     </b-row>
                 </b-col>
@@ -121,7 +121,7 @@
         <b-col cols="12" xl="6" class="pt-4 pb-5 me_detailed-component-block me_video-component page-paddings-left me_grey_background">
             <b-row class="h-100">
                 <b-col cols="4" xl="3" class="d-flex h-100">
-                    <img class="me_icon_consult" src="../assets/images/messpl.png" >
+                    <img class="me_icon_consult" alt="DGUV V3 Messungen" src="../assets/images/messpl.png" >
                 </b-col>
                 <b-col cols="8" xl="9" class="h-100 me-consulting-pad-container">
                     <b-row class="h-100">
@@ -141,7 +141,7 @@
         <b-col cols="12" xl="6" class="pt-4 pb-5 me_detailed-component-block me_video-component page-paddings-right me_grey_background">
             <b-row class="h-100">
                 <b-col cols="4" xl="3" class="d-flex h-100">
-                    <img class="me_icon_consult" src="../assets/images/messvolt.png" >
+                    <img class="me_icon_consult" alt="Netzimpedanzmessungen und Ermittlung Supraharmonische" src="../assets/images/messvolt.png" >
                 </b-col>
                 <b-col cols="8" xl="9" class="h-100 me-consulting-pad-container">
                     <b-row class="h-100">
@@ -165,6 +165,13 @@
     import TitleComponent from '../components/TitleComponent';
 
     export default {
+      metaInfo: {
+        title: 'BeratungStromnetze',
+        titleTemplate: null,
+        meta: [
+          { name: 'description', content: 'Wir beraten rund um Stromnetze' }
+        ]
+      },
         components: {
             ImageGreetingComponent,
             TitleComponent

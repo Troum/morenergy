@@ -10,6 +10,13 @@
     import VideosComponent from '../components/VideosComponent';
 
     export default {
+      metaInfo: {
+        title: 'Netzimpedanz_Video',
+        titleTemplate: null,
+        meta: [
+          { name: 'description', content: 'Videos' }
+        ]
+      },
         components: {
             ImageGreetingComponent,
             VideosComponent

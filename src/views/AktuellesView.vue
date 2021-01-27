@@ -9,6 +9,13 @@
 import NewscardsComponent from '../components/NewscardsComponent';
 import ImageGreetingComponent from '../components/ImageGreetingComponent';
 export default {
+  metaInfo: {
+    title: 'Nachrichten_morEnergy',
+    titleTemplate: null,
+    meta: [
+      { name: 'description', content: 'Unsere Neuigkeitenund alles was uns bewegt' }
+    ]
+  },
   components: {
     NewscardsComponent,
     ImageGreetingComponent

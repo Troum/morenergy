@@ -64,22 +64,27 @@ export default {
       partners: [
         {
           title: 'Astrol',
+          alt: 'Astrol',
           image: require('../assets/images/astrol.png')
         },
         {
           title: 'Renewable Energy Hamburg',
+          alt: 'Renewable Energy Hamburg',
           image: require('../assets/images/member.png')
         },
         {
           title: 'HSU',
+          alt: 'HSU',
           image: require('../assets/images/HSU.png')
         },
         {
           title: 'Bild',
+          alt: 'Bild',
           image: require('../assets/images/Bild.png')
         },
         {
           title: '8.2.group',
+          alt: '8.2.group',
           image: require('../assets/images/8_2_group.png')
         }
       ]

@@ -35,6 +35,13 @@
     import HeaderComponent from './components/HeaderComponent';
     import FooterComponent from './components/FooterComponent';
     export default {
+        metaInfo: {
+            title: 'Hauptseite_morEnergy',
+            titleTemplate: null,
+          meta: [
+            { name: 'description', content: 'Dies ist die Hauptseite von morEnegy' }
+          ]
+        },
         components: {
             HeaderComponent,
             FooterComponent

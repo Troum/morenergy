@@ -70,24 +70,28 @@ export default new MLCreate({
             slider: [
                 {
                     image: './carousel-images/me_stromnetze-slide.jpg',
+                    alt: 'Power Grids',
                     indicator: 'Power Grids',
                     caption: 'We enable a precise insight into your network. This enables us to determine the exact number of (renewable) energy producers or consumers that can be connected to the grid and predict the grid effects. On request, we can set up a large-scale network monitoring system with automated analysis.',
                     mobile: 'We enable a precise insight into your network. This enables us to determine the exact number of (renewable) energy producers or consumers that can be connected to the grid and predict the grid effects. On request, we can set up a large-scale network monitoring system with automated analysis.'
                 },
                 {
                     image: './carousel-images/slide_industrieanlagen.jpg',
+                    alt: 'Industrial plants',
                     indicator: 'Industrial plants',
                     caption: 'Nowadays a wide variety of systems are operated with inverters. These inverters affect the grid and can generate feedback. As a result of the feedback, the control systems of plants are disturbed, i.e. unstable and can fail. We measure whether your system is running stable and whether the interaction of your plant with the grid works without problems.',
                     mobile: 'Nowadays a wide variety of systems are operated with inverters. These inverters affect the grid and can generate feedback. As a result of the feedback, the control systems of plants are disturbed, i.e. unstable and can fail. We measure whether your system is running stable and whether the interaction of your plant with the grid works without problems.'
                 },
                 {
                     image: './carousel-images/slide_erneuerbare.jpg',
+                    alt: 'Renewable Energies',
                     indicator: 'Renewable Energies',
                     caption: 'We have more than 15 years of experience in renewable energies. Contact us if you want to connect new generators to the grid or if you simply have a conceptual question. morEnergy - Conceptual design, testing and problem solving around PVA and wind turbines',
                     mobile: 'We have more than 15 years of experience in renewable energies. Contact us if you want to connect new generators to the grid or if you simply have a conceptual question. morEnergy - Conceptual design, testing and problem solving around PVA and wind turbines'
                 },
                 {
                     image: './carousel-images/slide-consulting.jpg',
+                    alt: 'Consulting',
                     indicator: 'Consulting',
                     caption: 'Based on our long-term experience in the field of renewable energies we offer you various consulting services to make your energy project a success. Among other things, we offer calculations for steady-state and transient stability, the design of the various controllers within the WTG and the optimal dimensioning of system filters. For modelling, we can especially rely on our measuring instruments ONIS-690V and ONIS-36kV, with which we can carry out an objective measurement of the time- and frequency-dependent grid impedance at low and medium voltage level.',
                     mobile: 'Based on our long-term experience in the field of renewable energies we offer you various consulting services to make your energy project a success. Among other things, we offer calculations for steady-state and transient stability, the design of the various controllers within the WTG and the optimal dimensioning of system filters. For modelling, we can especially rely on our measuring instruments ONIS-690V and ONIS-36kV, with which we can carry out an objective measurement of the time- and frequency-dependent grid impedance at low and medium voltage level.'
@@ -141,15 +145,18 @@ export default new MLCreate({
                     {
                         image: require('./assets/images/target.png'),
                         name: 'PV system',
+                        alt: 'Solarcase',
                         link: 'https://admin.morenergypresentation.xyz.morenergypresentation.xyz/pdf/case_solar_power_plants.pdf'
                     },
                     {
                         image: require('./assets/images/network.png'),
                         name: 'High-rise lift',
+                        alt: 'Liftcase',
                         link: 'https://admin.morenergypresentation.xyz.morenergypresentation.xyz/pdf/case_aufzug_en.pdf'
                     },
                     {
                         image: require('./assets/images/project-management.png'),
+                        alt: 'Traincase',
                         name: 'Electronic railway\n',
                         link: 'https://admin.morenergypresentation.xyz.morenergypresentation.xyz/pdf/case_elektrische_schienenfahrzeuge_en.pdf'
                     }
@@ -158,6 +165,7 @@ export default new MLCreate({
             consulting: {
                 greeting: {
                     image: require('./assets/images/deistl.png'),
+                    alt: 'Auf Grundlage unserer langjährigen Erfahrungen im Bereich erneuerbarer Energien, bieten wir Ihnen verschiedene Beratungsleistungen, damit ihr Energieprojekt ein Erfolg wird. U.a. bieten wir Berechnungen zur stationären und transienten Stabilität, die Auslegung der verschiedenen Regler innerhalb der WEA sowie die optimale Dimensionierung von Anlagenfiltern an. Zur Modellbildung können wir insbesondere auf unsere Messgeräte ONIS-690V und ONIS-36kV zurückgreifen, mit denen wir eine objektive Messung der zeit- und frequenzabhängigen Netzimpedanz auf Nieder- und Mittelspannungsebene durchführen können ',
                     title: 'Services',
                     caption: 'On the basis of our many years of experience in the field of renewable energies, we offer you various consulting services to make your energy project a success. Among other things, we offer calculations for steady-state and transient stability, the design of the various controllers within the WTG, and the optimal dimensioning of plant filters. For modelling, we can rely in particular on our ONIS-690V and ONIS-36kV measuring instruments, with which we can carry out an objective measurement of the time- and frequency-dependent network impedance at low and medium voltage level.'
                 },
@@ -257,6 +265,7 @@ export default new MLCreate({
             team: {
                 title: 'Our Team',
                 image: require('./assets/images/team.png'),
+                alt: 'Team',
                 description: 'We are an innovative engineering company for electricity distribution networks and renewable energies and want to contribute to the energy turnaround. A special focus is the determination of the impedance of grid connection points and systems. For this purpose, we have developed one measuring device each for the low and medium voltage level.',
                 button: 'Team information',
                 link: '/team-morenergy'
@@ -454,11 +463,13 @@ export default new MLCreate({
             teamView: {
                 greeting: {
                     image: require('./assets/images/team.png'),
+                    alt: 'Team',
                     title: 'Team morEnergy',
                     caption: 'We are an innovative engineering office for power distribution grids and renewable energies and want to make a contribution to the energy revolution. A special focus is on the determination of the impedance of grid connection points and systems. For this purpose we have developed one measuring device each for the low and medium voltage level.'
                 },
                 greetingMobile: {
                     image: require('./assets/images/team.png'),
+                    alt: 'Team',
                     title: 'Team morEnergy',
                     caption: 'We are an innovative engineering office for power distribution grids and renewable energies and want to make a contribution to the energy revolution. A special focus is on the determination of the impedance of grid connection points and systems. For this purpose we have developed one measuring device each for the low and medium voltage level.'
                 },
@@ -588,6 +599,7 @@ export default new MLCreate({
                     title: 'MOME - DAS NETZ 4.0',
                     videoUrl: require('./assets/videos/workshop_munich.mp4'),
                     posterUrl: require('./assets/images/mome.png'),
+                    alt: 'Monitoring Me',
                     description: 'MoMe, lang MonitoringMe, ist unsere Antwort auf die Digitalisierungmöglichkeiten der Verteilnetze. Durch unsere Monitoringfunktionen optimieren wir das Verteilnetz dort wo es nötig ist, ohne der Notwendigkeit zusätzlicher Investitionen. Unsere MoMe-IoT-Plattform ermöglicht eine effiziente und sichere Datenübertragung zwischen den Messeinheiten und unseren Webservern. Unsere Distributed System-Einheiten schaffen die Voraussetzungen für die smarte Netz von morgen. Erfahren Sie mehr über unsere Technologien und Fallstudien auf Anfrage. \n' +
                         '<br><br>' +
                         'MoMe Vorteile<br>' +
@@ -602,6 +614,7 @@ export default new MLCreate({
                         '# Preventive Maintenance (KI-gesteuert)'  },
                 2: {
                     title: 'ONIS Technologie - Aus Hamburg für die Welt',
+                    alt: 'ONIS 690 kV',
                     posterUrl: require('./assets/images/onis_front.png'),
                     description: 'morEnergy ist aus der Netzimpedanzforschung hervorgegangen. Als Hamburger Unternehmen wollen wir unsere Technologie dem Weltmarkt anbieten, um die dezentrale Stromerzeugung zu unterstützen. Mit unserem patentierten Online Network Impedance Spectrometer ONIS  können hochfrequente Power Quality Messungen durch geführt werden. Dabei ist unsere Spezialität die Netzimpedanzmessung zur Detektion von gefährlichen Resonanzen bis 50 kHz im Stromnetz. Wir heben uns mit dieser Lösung von der Konkurrenz ab und können Probleme feststellen, bevor sie entstehen.  Wir bieten die Messungen vor Ort an, um Schwachpunkte zu identifizieren und zeigen Ihnen als Sachverständige Lösungsvorschläge auf.'
                 }
@@ -617,16 +630,19 @@ export default new MLCreate({
                     {
                         image: require('./assets/images/target.png'),
                         name: 'PV-Anlage',
+                        alt: 'Solarcase',
                         link: '/pvanlage'
                     },
                     {
                         image: require('./assets/images/network.png'),
                         name: 'Hochhauslift',
+                        alt: 'Liftcase',
                         link: '/hochhauslift'
                     },
                     {
                         image: require('./assets/images/project-management.png'),
                         name: 'elektrische Eisenbahn',
+                        alt: 'Traincase',
                         link: '/elektrische'
                     }
                 ],
@@ -707,6 +723,7 @@ export default new MLCreate({
             consulting: {
                 greeting: {
                     image: require('./assets/images/deistl.png'),
+                    alt: 'Auf Grundlage unserer langjährigen Erfahrungen im Bereich erneuerbarer Energien, bieten wir Ihnen verschiedene Beratungsleistungen, damit ihr Energieprojekt ein Erfolg wird. U.a. bieten wir Berechnungen zur stationären und transienten Stabilität, die Auslegung der verschiedenen Regler innerhalb der WEA sowie die optimale Dimensionierung von Anlagenfiltern an. Zur Modellbildung können wir insbesondere auf unsere Messgeräte ONIS-690V und ONIS-36kV zurückgreifen, mit denen wir eine objektive Messung der zeit- und frequenzabhängigen Netzimpedanz auf Nieder- und Mittelspannungsebene durchführen können ',
                     title: 'Dienstleistungen',
                     caption: 'Auf Grundlage unserer langjährigen Erfahrungen im Bereich erneuerbarer Energien, bieten wir Ihnen verschiedene Beratungsleistungen, damit ihr Energieprojekt ein Erfolg wird.\n' +
                         'U.a. bieten wir Berechnungen zur stationären und transienten Stabilität, die Auslegung der verschiedenen Regler innerhalb der WEA sowie die optimale Dimensionierung von Anlagenfiltern an. Zur Modellbildung können wir insbesondere auf unsere Messgeräte ONIS-690V und ONIS-36kV zurückgreifen, mit denen wir eine objektive Messung der zeit- und frequenzabhängigen Netzimpedanz auf Nieder- und Mittelspannungsebene durchführen können\n'
@@ -725,6 +742,7 @@ export default new MLCreate({
             team: {
                 title: 'Unser Team',
                 image: require('./assets/images/team.png'),
+                alt: 'Team',
                 description: 'Wir sind ein innovatives Ingenieurbüro für ' +
                     'Stromverteilnetze und Erneuerbare Energien und wollen einen Beitrag zur ' +
                     'Energiewende leisten. Ein besonderer Fokus ist auf die Bestimmung der Impedanz von ' +
@@ -946,6 +964,7 @@ export default new MLCreate({
                 },
                 greetingMobile: {
                     image: require('./assets/images/team.png'),
+                    alt: 'Team',
                     title: 'Team morEnergy',
                     caption: 'Wir sind ein innovatives Ingenieurbüro für Stromverteilnetze und Erneuerbare Energien und wollen einen Beitrag zur Energiewende leisten. ' +
                         'Ein besonderer Fokus ist auf die Bestimmung der Impedanz von Netzverknüpfungspunkten und Anlagen gerichtet. ' +

@@ -1,10 +1,10 @@
 <template>
     <b-row class="w-100 mx-auto page-paddings">
 
-        <b-col id="image-greeting" class="col-sm-12 col-lg-4 pr-sm-0 pr-md-0 pr-lg-1 pr-xl-1">
+        <b-col id="image-greeting-1" class="col-sm-12 col-lg-4 pr-sm-0 pr-md-0 pr-lg-1 pr-xl-1">
             <b-row class="m-0 p-0 d-flex position-relative">
                 <b-col cols="12" class="p-0 m-0">
-                    <img class="img-contento-top" src="../assets/images/contento1.png" alt="">
+                    <img class="img-contento-top" src="../assets/images/contento1.png" alt="WKA">
                 </b-col>
                 <b-col offset-xl="6" cols="12" xl="6" class="me_greeting-component-caption-container">
                     <b-row>
@@ -16,10 +16,10 @@
             </b-row>
         </b-col>
 
-        <b-col id="image-greeting" class="col-sm-12 col-lg-4 pl-sm-0 pl-md-0 pl-lg-2 pl-xl-2  pr-sm-0 pr-md-0 pr-lg-2 pr-xl-2">
+        <b-col id="image-greeting-2" class="col-sm-12 col-lg-4 pl-sm-0 pl-md-0 pl-lg-2 pl-xl-2  pr-sm-0 pr-md-0 pr-lg-2 pr-xl-2">
             <b-row class="m-0 p-0 d-flex position-relative">
                 <b-col cols="12" class="p-0 m-0">
-                    <img class="img-contento-top" src="../assets/images/contento2.png" alt="">
+                    <img class="img-contento-top" src="../assets/images/contento2.png" alt="Kreuzfahrtschiff">
                 </b-col>
                 <b-col offset-xl="6" cols="12" xl="6" class="me_greeting-component-caption-container">
                     <b-row>
@@ -31,10 +31,10 @@
             </b-row>
         </b-col>
 
-        <b-col id="image-greeting" class="col-sm-12 col-lg-4 pl-sm-0 pl-md-0 pl-lg-1 pl-xl-1">
+        <b-col id="image-greeting-3" class="col-sm-12 col-lg-4 pl-sm-0 pl-md-0 pl-lg-1 pl-xl-1">
             <b-row class="m-0 p-0 d-flex position-relative">
                 <b-col cols="12" class="p-0 m-0">
-                    <img class="img-contento-top" src="../assets/images/contento3.png" alt="">
+                    <img class="img-contento-top" src="../assets/images/contento3.png" alt="Bahnimpedanz">
                 </b-col>
                 <b-col offset-xl="6" cols="12" xl="6" class="me_greeting-component-caption-container">
                     <b-row>
@@ -47,10 +47,10 @@
         </b-col>
 
 
-        <b-col id="image-greeting" class="pt-4 col-sm-12 col-lg-6 pr-sm-0 pr-md-0 pr-lg-2 pr-xl-2">
+        <b-col id="image-greeting-4" class="pt-4 col-sm-12 col-lg-6 pr-sm-0 pr-md-0 pr-lg-2 pr-xl-2">
             <b-row class="m-0 p-0 d-flex position-relative">
                 <b-col cols="12" class="p-0 m-0">
-                    <img class="img-contento-bot" src="../assets/images/contento4.png" alt="">
+                    <img class="img-contento-bot" src="../assets/images/contento4.png" alt="Lift ">
                 </b-col>
                 <b-col offset-xl="4" cols="12" xl="8" class="me_greeting-component-caption-container">
                     <b-row>
@@ -62,10 +62,10 @@
             </b-row>
         </b-col>
 
-        <b-col  id="image-greeting" class="col-sm-12 col-lg-6 pt-4 pl-sm-0 pl-md-0 pl-lg-2 pl-xl-2">
+        <b-col  id="image-greeting-5" class="col-sm-12 col-lg-6 pt-4 pl-sm-0 pl-md-0 pl-lg-2 pl-xl-2">
             <b-row class="m-0 p-0 d-flex position-relative">
                 <b-col cols="12" class="p-0 m-0">
-                    <img class="img-contento-bot" src="../assets/images/contento5.png" alt="">
+                    <img class="img-contento-bot" src="../assets/images/contento5.png" alt="Netzimpedanzmessung">
                 </b-col>
                 <b-col offset-xl="4" cols="12" xl="8" class="me_greeting-component-caption-container">
                     <b-row>
